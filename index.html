@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operasi Aritmetika</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Operasi aritmetika</h1>
+        <div class="input-group">
+            <input type="number" id="num1" placeholder="Angka 1">
+            <input type="number" id="num2" placeholder="Angka 2">
+        </div>
+        <div class="button-group">
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">-</button>
+            <button onclick="calculate('/')">÷</button>
+            <button onclick="calculate('*')">×</button>
+        </div>
+        <div class="result" id="result">
+            Hasil :
+        </div>
+    </div>
+    <video id="video" loop playsinline>
+        <source src="Bernadya - Satu Bulan (Official Lyric Video).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    <script>
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('video');
+            audio.play().catch(error => {
+                console.log('Error memutar audio: ' + error);
+            });
+        }, { once: true });
+    </script>
+
+</body>
+</html>
